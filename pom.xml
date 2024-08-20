@@ -17,6 +17,13 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+	<distributionManagement>
+  		<repository>
+   			<id>maven-releases</id>
+    <!-- CHANGE HERE by your team Nexus server -->
+    			<url>http://localhost:8081/repository/maven-releases/</url>
+  		</repository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -57,7 +64,11 @@
 		</dependency>
 		
 	</dependencies>
-
+	<repository>
+  		<id>maven-releases</id>
+  		<name>maven-releases</name>
+  		<url>http://localhost:8081/repository/maven-releases/</url>
+	</repository>
 	<build>
 		<plugins>
 			<plugin>
