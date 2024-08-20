@@ -78,10 +78,12 @@
 			</plugin>
 		</plugins>
 	</build>
-	<repository>
-  		<id>maven-releases</id>
-  		<name>maven-releases</name>
-  		<url>http://localhost:8081/repository/maven-releases/</url>
-	</repository>
+	<repositories>
+		<repository>
+	  		<id>maven-releases</id>
+	  		<name>maven-releases</name>
+	  		<url>http://localhost:8081/repository/maven-releases/</url>
+		</repository>
+	</repositories>
 
 </project>
